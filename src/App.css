@@ -42,8 +42,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 180px;
-  background-color: rgba(255, 255, 255, 0.76);
-  margin-bottom: 24px;
 }
 
 .tag-wrapper {
@@ -58,12 +56,19 @@ h3.tagline {
   margin-bottom: 16px;
 }
 
+.bee-icon {
+  width: 80%;
+  height: 80%;
+  opacity: 0.75;
+} 
+
 p.sub-tagline {
   margin-top: -20px;
   margin-left: auto;
-  margin-right: -2px;
+  margin-right: -2.5px;
   font-size: 14px;
   opacity: 0.7;
+  font-style: italic;
 }
 
 .locate-card {
@@ -87,7 +92,7 @@ p.sub-tagline {
 .locate-button {
   position: relative;
   margin: 0 auto;
-  background:rgba(255, 255, 255, 1);
+  background:rgba(255, 255, 255, .95);
   border-radius: 10px;
   height: 100px;
   width: 64px;
@@ -100,10 +105,11 @@ p.sub-tagline {
 
 .icon {
   z-index: 1;
-  color: #474747;
-  font-size: 32px;
+  color: #ec9664;
+  font-size: 36px;
   position: relative;
   margin-left: -3px;
+  margin-top: 3px;
 }
 
 .locate-button:before, .locate-button:after {

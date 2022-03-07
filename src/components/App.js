@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   return (
-    <div style={{ height: '100vh', backgroundColor: '#ffd15a' }}>
+    <div style={{ height: '100vh', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
       <Router>
       <>
           <RecoilRoot>
