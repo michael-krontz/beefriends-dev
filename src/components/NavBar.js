@@ -7,7 +7,7 @@ const menuIcon = <FontAwesomeIcon icon={faBars} />
 export default function NavBar() {
   return (
     <div className='navbar-wrapper'>
-        <div className='logo'>
+        <div className='nav-logo'>
             <Link to={'/'} style={{ textDecoration: 'none', color: '#FFD15A', fontSize: '16px' }}>BeeFriends</Link>
         </div>
         <div className='menu'>
