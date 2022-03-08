@@ -10,14 +10,6 @@
   align-items: center;
 }
 
-.menu {
-  margin-left: auto;
-  display: flex;
-  padding-right: 16px;
-  height: 100%;
-  align-items: center;
-}
-
 .nav-logo {
   display: flex;
   align-items: center;

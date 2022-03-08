@@ -10,9 +10,6 @@ export default function NavBar() {
         <div className='nav-logo'>
             <Link to={'/'} style={{ textDecoration: 'none', color: '#FFD15A', fontSize: '16px' }}>BeeFriends</Link>
         </div>
-        <div className='menu'>
-            <Link to={'/authcontent'} style={{ textDecoration: 'none', color: '#FFD15A', fontSize: '20px' }}>{menuIcon}</Link>
-        </div>
     </div>
   )
 }
