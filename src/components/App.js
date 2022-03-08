@@ -6,16 +6,19 @@ import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue } from 'reco
 import AuthContent from "./AuthContent";
 import Locate from "./Locate";
 import Logo from "./Logo";
+import SideBar from "./SideBar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function App() {
   return (
     <div style={{ height: '100vh', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
+      <div id="page-wrap">
       <Router>
       <>
           <RecoilRoot>
             <header>
+              <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
               <NavBar></NavBar>
             </header>
             <Logo></Logo>
@@ -24,6 +27,7 @@ function App() {
           <Route path='/authcontent' component={AuthContent}/>
       </>
       </Router>
+      </div>
     </div>
   )
 }
