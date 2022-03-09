@@ -8,6 +8,7 @@ import Login from './Login'
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
+import Home from './Home'
 
 export default function AuthContent() {
 
@@ -24,6 +25,7 @@ export default function AuthContent() {
                 <Route path="/signup" component={Signup} />
                 <Route path="/login" component={Login} />
                 <Route path="/forgot-password" component={ForgotPassword} />
+                <Route path="/" component={Home} />
               </Switch>
             </AuthProvider>
           </Router>

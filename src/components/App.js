@@ -1,13 +1,11 @@
 import React from "react"
 import '../App.css'
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from "./NavBar";
-import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue } from 'recoil';
+import { RecoilRoot } from 'recoil';
 import AuthContent from "./AuthContent";
-import Locate from "./Locate";
-import Logo from "./Logo";
 import SideBar from "./SideBar";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Home from "./Home";
 
 
 function App() {
@@ -21,10 +19,11 @@ function App() {
               <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
               <NavBar></NavBar>
             </header>
-            <Logo></Logo>
-            <Locate></Locate>
           </RecoilRoot>
+          <Switch>
+          <Route exact path='/' component={Home}/>
           <Route path='/authcontent' component={AuthContent}/>
+          </Switch>
       </>
       </Router>
       </div>
