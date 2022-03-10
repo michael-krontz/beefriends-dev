@@ -111,8 +111,29 @@ p.sub-tagline {
   justify-content: space-between;
 }
 
+.create-link-wrapper {
+  display: flex;
+  padding-top: 5px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
 .link {
   color: #E79800;
+}
+
+.link:hover {
+  color: #E79800;
+}
+
+.create-link:hover {
+  color: #E79800;
+}
+
+.create-link {
+  color: #E79800;
+  margin-left: 5px;
 }
 
 .icon {

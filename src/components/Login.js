@@ -57,7 +57,7 @@ export default function Login() {
                     {error && <Alert severity="error">{error}</Alert>}
                 </Stack>
                 
-                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '95%' }, }} noValidate autoComplete="off" onSubmit = {handleSubmit}>
+                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '95%' }, }} autoComplete="off" onSubmit = {handleSubmit}>
                 <TextField id="outlined-basic" type="email" label="Email" variant="outlined" inputRef={emailRef} required/>
                 <TextField id="outlined-basic"  type="password" label="Password" variant="outlined" inputRef={passwordRef} required/>
                 <ThemeProvider theme={theme}>
