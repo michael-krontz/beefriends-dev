@@ -1,7 +1,7 @@
 import React from 'react'
 import beeIcon from '../images/bee-icon.png'
-import { Form } from 'react-bootstrap'
 import LocateButton from './LocateButton'
+import Box from '@mui/material/Box';
 
 
 export default function Home() {
@@ -18,9 +18,9 @@ export default function Home() {
       </div>
 
       <div className='locate-card'>
-        <Form>
-            <LocateButton></LocateButton>
-        </Form>
+        <Box component="form" autoComplete="off">
+         <LocateButton></LocateButton>
+        </Box>
       </div>
     </div>
   )
