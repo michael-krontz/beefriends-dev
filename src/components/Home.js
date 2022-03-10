@@ -1,6 +1,6 @@
 import React from 'react'
 import beeIcon from '../images/bee-icon.png'
-import { Card, Form } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import LocateButton from './LocateButton'
 
 
@@ -17,11 +17,11 @@ export default function Home() {
         </div>
       </div>
 
-      <Card className='locate-card'>
+      <div className='locate-card'>
         <Form>
             <LocateButton></LocateButton>
         </Form>
-      </Card>
+      </div>
     </div>
   )
 }

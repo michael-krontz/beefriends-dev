@@ -1,5 +1,9 @@
 import React, { useRef, useState } from 'react'
-import { Form, Button, Card, Alert } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
+import Alert from '@mui/material/Alert';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory} from 'react-router-dom'
 
@@ -33,7 +37,7 @@ export default function Signup() {
   return (
       <>
         <Card>
-            <Card.Body>
+            <CardContent>
                 <h2 className='text-center mb-4'>Sign Up</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit = {handleSubmit}>
@@ -51,7 +55,7 @@ export default function Signup() {
                     </Form.Group>
                     <Button disabled={loading} className="w-100 mt-3" type="submit">Sign Up</Button>
                 </Form>
-            </Card.Body>
+            </CardContent>
         </Card>
         <div className='w-100 text-center mt-2'>
         Already have an account? <Link to="/login">Log In</Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import Box from '@mui/material/Box'
 import Signup from './Signup'
 import { AuthProvider } from '../contexts/AuthContext'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
@@ -14,7 +14,7 @@ export default function AuthContent() {
 
   return (
     <div>
-      <Container className="d-flex align-items-center justify-content-center" style={{ height: 'auto', minHeight: "50vh" }}>
+      <Box className="d-flex align-items-center justify-content-center" style={{ height: 'auto', minHeight: "50vh" }}>
         <div className="w-100" style={{ maxWidth: '600px' }}>
           <Router>
             <AuthProvider>
@@ -30,7 +30,7 @@ export default function AuthContent() {
             </AuthProvider>
           </Router>
         </div>
-      </Container>
+      </Box>
     </div>
   )
 }

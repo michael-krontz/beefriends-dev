@@ -96,6 +96,25 @@ p.sub-tagline {
   box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.26);
 }
 
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  margin-top: 34px;
+}
+
+.login-link-wrapper {
+  display: flex;
+  padding-top: 5px;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.link {
+  color: #E79800;
+}
+
 .icon {
   z-index: 1;
   color: #ec9664;

@@ -1,7 +1,30 @@
 import React, { useRef, useState } from 'react'
-import { Form, Button, Card, Alert } from 'react-bootstrap'
+import Alert from '@mui/material/Alert';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from "react-router-dom"
+
+const theme = createTheme({
+    status: {
+      danger: '#e53e3e',
+    },
+    palette: {
+      primary: {
+        main: '#F5B64F',
+        darker: '#E79800',
+      },
+      neutral: {
+        main: '#64748B',
+        contrastText: '#fff',
+      },
+    },
+  });
 
 export default function Login() {
     const emailRef = useRef()
@@ -26,30 +49,28 @@ export default function Login() {
     }
 
   return (
-      <>
-        <Card>
-            <Card.Body>
-                <h2 className='text-center mb-4'>Log In</h2>
-                {error && <Alert variant="danger">{error}</Alert>}
-                <Form onSubmit = {handleSubmit}>
-                    <Form.Group id="email">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" ref={emailRef} required></Form.Control>
-                    </Form.Group>
-                    <Form.Group id="password">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" ref={passwordRef} required></Form.Control>
-                    </Form.Group>
-                    <Button disabled={loading} className="w-100 mt-3" type="submit">Log in</Button>
-                </Form>
-                <div className="w-100 text-center mt-3">
-                    <Link to="/forgot-password">Forgot Password?</Link>
+      <div className='card-wrapper'>
+        <Card variant="outlined">
+            <CardContent>
+                <h2>Log In</h2>
+                <Stack sx={{ width: '95%', margin: 'auto', marginTop: '15px', marginBottom: '8px' }} spacing={2}>
+                    {error && <Alert severity="error">{error}</Alert>}
+                </Stack>
+                
+                <Box component="form" sx={{ '& > :not(style)': { m: 1, width: '95%' }, }} noValidate autoComplete="off" onSubmit = {handleSubmit}>
+                <TextField id="outlined-basic" type="email" label="Email" variant="outlined" inputRef={emailRef} required/>
+                <TextField id="outlined-basic"  type="password" label="Password" variant="outlined" inputRef={passwordRef} required/>
+                <ThemeProvider theme={theme}>
+                    <Button disabled={loading} color="primary" variant="contained" type="submit">Log in</Button>
+                </ThemeProvider>
+                 </Box>
+
+                <div className='login-link-wrapper'>
+                    <Link to="/signup" className='link'>Create Account</Link>
+                    <Link to="/forgot-password" className='link'>Forgot Password?</Link>
                 </div>
-            </Card.Body>
+            </CardContent>
         </Card>
-        <div className='w-100 text-center mt-2'>
-        Need an Account? <Link to="/signup">Sign Up</Link>
-        </div>
-      </>
+      </div>
   )
 }
