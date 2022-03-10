@@ -55,7 +55,7 @@ export default function ForgotPassword() {
             <CardContent>
                 <h2>Password Reset</h2>
                 <Stack sx={{ width: '95%', margin: 'auto', marginTop: '15px', marginBottom: '8px' }} spacing={2}>
-                    {error && <Alert severity="danger">{error}</Alert>}
+                    {error && <Alert severity="error">{error}</Alert>}
                     {message && <Alert severity="success">{message}</Alert>}
                 </Stack>
 
