@@ -7,7 +7,6 @@ import AuthContent from "./AuthContent";
 import SideBar from "./SideBar";
 import Home from "./Home";
 
-
 function App() {
   return (
     <div style={{ height: '100vh', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
