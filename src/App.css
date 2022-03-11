@@ -26,6 +26,18 @@
   justify-content: center;
 }
 
+.update-profile-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.email-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
 .logo {
   width: 75vw;
   height: 75vw;
