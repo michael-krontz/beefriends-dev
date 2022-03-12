@@ -6,6 +6,8 @@ import { RecoilRoot } from 'recoil';
 import AuthContent from "./AuthContent";
 import SideBar from "./SideBar";
 import Home from "./Home";
+import ApiaristHome from "./ApiaristHome";
+import Signup from "./Signup";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           </RecoilRoot>
           <Switch>
           <Route exact path='/' component={Home}/>
+          <Route path='/signup' component={Signup}/>
+          <Route path='/apiaristhome' component={ApiaristHome}/>
           <Route path='/authcontent' component={AuthContent}/>
           </Switch>
       </>
