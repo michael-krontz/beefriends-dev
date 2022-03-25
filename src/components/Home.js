@@ -11,10 +11,17 @@ export default function Home() {
             <div className='logo'>
                 <img src={beeIcon} alt="Logo" className='bee-icon'></img>
             </div>
-        <div className='tag-wrapper'>
-            <h3 className='tagline'>Beefriend a Local Apiarist</h3>
-            <p className='sub-tagline'>(Beekeeper)</p>
-        </div>
+            <div className='taglines'>
+                <div className='tag-wrapper'>
+                    <h3 className='tagline'>Beefriend Local Beekeepers</h3>
+                </div>
+                <div className='tag-wrapper'>
+                    <h3 className='tagline'>Sample Local Honey</h3>
+                </div>
+                <div className='tag-wrapper'>
+                    <h3 className='tagline'>Help Save The Bees</h3>
+                </div>
+            </div>
       </div>
 
       <div className='locate-card'>
