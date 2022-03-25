@@ -11,7 +11,7 @@ import Signup from "./Signup";
 
 function App() {
   return (
-    <div style={{ height: '100%', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
+    <div style={{ height: '150vh', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
       <div id="page-wrap">
       <Router>
       <>
