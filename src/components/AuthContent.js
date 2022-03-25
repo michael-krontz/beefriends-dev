@@ -22,8 +22,8 @@ export default function AuthContent() {
                 <Redirect exact from="/authcontent" to="/dashboard" />
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
                 <PrivateRoute path="/update-profile" component={UpdateProfile} />
-                <Route path="/signup" component={Signup} />
                 <Route path="/login" component={Login} />
+                <Route path="/signup" component={Signup} />
                 <Route path="/forgot-password" component={ForgotPassword} />
                 <Route path="/" component={Home} />
               </Switch>

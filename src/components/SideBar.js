@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
 
         <div className="menu-item">
-            <Link onClick={() => handleCloseMenu()} to={'/authcontent'} style={{ textDecoration: 'none', color: '#FFD15A', fontSize: '18px' }} >Apiarist Login</Link>
+            <Link onClick={() => handleCloseMenu()} to={'/apiaristhome'} style={{ textDecoration: 'none', color: '#FFD15A', fontSize: '18px' }} >Apiarist Login</Link>
         </div>
     </Menu>
 
