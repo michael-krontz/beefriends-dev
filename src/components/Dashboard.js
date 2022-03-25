@@ -60,7 +60,7 @@ export default function Dashboard() {
 
     function fetchData() {
       var beekeeperData = getData  
-      console.log(beekeeperData)
+      console.log(beekeeperData[0])
       console.log("fetching")
     }
 
