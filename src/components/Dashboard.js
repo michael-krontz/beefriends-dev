@@ -8,6 +8,9 @@ import CardContent from '@mui/material/CardContent';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import { Link, useHistory } from 'react-router-dom'
+import useAxios, { configure } from 'axios-hooks'
+import Axios from 'axios'
+import LRU from 'lru-cache'
 
 const theme = createTheme({
     status: {
@@ -25,7 +28,13 @@ const theme = createTheme({
     },
   });
 
+  const axios = Axios.create({
+    baseURL: 'https://beefriends-development-default-rtdb.firebaseio.com/',
+  })
 
+  const cache = new LRU({ max: 10 })
+  configure({ axios, cache })
+  
 export default function Dashboard() {
     const [error, setError] = useState('')
     const { currentUser, logout } = useAuth()
@@ -42,23 +51,33 @@ export default function Dashboard() {
             setError('Failed to log out')
         }
     }
+    const [{ data: getData, loading: getLoading, error: getError }] = useAxios('beekeepers.json')
+    if (getLoading) return <p>Loading...</p>
+    if (getError) return <p>Error!</p>
+    if (getData) {
+      fetchData()
+    }
+
+    function fetchData() {
+      var beekeeperData = getData  
+      console.log(beekeeperData)
+      console.log("fetching")
+    }
 
   return (
     <div className='card-wrapper'>
         <Card variant="outline">
-            <CardContent>
-                <h2>Profile</h2>
-                
+            <CardContent>               
                 <Stack sx={{ width: '95%', margin: 'auto', marginTop: '15px', marginBottom: '8px' }} spacing={2}>
                 {error && <Alert severity="error">{error}</Alert>}
                 </Stack>
                 <Box sx={{ '& > :not(style)': { m: 1, width: '95%' }, }} >
                     <div className='update-profile-wrapper'>
                         <div className='email-wrapper'>
-                            <strong>Email: </strong> {currentUser.email}
+                           {currentUser.email}
                         </div>
-                        <Link to="/update-profile" className="link">
-                        Update Profile
+                        <Link to="/update-account" className="link">
+                        Account Settings
                         </Link>
                     </div>
                     <ThemeProvider theme={theme}>

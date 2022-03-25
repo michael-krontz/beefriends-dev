@@ -27,7 +27,7 @@ const theme = createTheme({
   });
 
 
-export default function UpdateProfile() {
+export default function UpdateAccount() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -66,7 +66,7 @@ export default function UpdateProfile() {
       <div className='card-wrapper'>
         <Card variant="outlined">
             <CardContent>
-                <h2>Update Profile</h2>
+                <h2>Update Account</h2>
                 <Stack sx={{ width: '95%', margin: 'auto', marginTop: '15px', marginBottom: '8px' }} spacing={2}>
                     {error && <Alert severity="error">{error}</Alert>}
                 </Stack>
