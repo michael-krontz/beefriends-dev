@@ -34,7 +34,6 @@
 .taglines {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-top: 18px;
 }
 
@@ -165,10 +164,10 @@ h3.tagline {
   margin-bottom: 16px;
 }
 
-.bee-icon {
+/* .bee-icon {
   width: 80%;
   height: 80%;
-} 
+}  */
 
 p.sub-tagline {
   margin-top: -20px;
@@ -209,6 +208,8 @@ p.sub-tagline {
   z-index: 1;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.26); 
   box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.26);
+  display: flex;
+  justify-content: center;
 }
 
 .card-wrapper {
@@ -267,7 +268,7 @@ p.sub-tagline {
   font-size: 36px;
   position: relative;
   margin-left: -3px;
-  margin-top: 3px;
+  margin-top: 23px;
 }
 
 .locate-button:before, .locate-button:after {
@@ -366,4 +367,20 @@ p.sub-tagline {
 
 .home-content-wrapper {
   height: 100%;
+}
+
+.results-wrapper {
+  margin-top: 5.5vh;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #3d3d3d;
+}
+
+.results {
+  margin-top: 23px;
 }
