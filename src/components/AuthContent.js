@@ -7,8 +7,9 @@ import Dashboard from './Dashboard'
 import Login from './Login'
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from "./ForgotPassword"
-import UpdateProfile from "./UpdateProfile"
+import UpdateAccount from "./UpdateAccount"
 import Home from './Home'
+import Results from './Results'
 
 export default function AuthContent() {
 
@@ -21,11 +22,12 @@ export default function AuthContent() {
               <Switch>
                 <Redirect exact from="/authcontent" to="/dashboard" />
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
-                <PrivateRoute path="/update-profile" component={UpdateProfile} />
+                <PrivateRoute path="/update-account" component={UpdateAccount} />
                 <Route path="/login" component={Login} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/forgot-password" component={ForgotPassword} />
                 <Route path="/" component={Home} />
+                <Route path="/results" component={Results} />
               </Switch>
             </AuthProvider>
           </Router>
