@@ -162,6 +162,7 @@ h3.tagline {
   color: #4e4e4e;
   font-family: roboto;
   margin-bottom: 16px;
+  letter-spacing: -1px;
   font-weight: bold;
 }
 
