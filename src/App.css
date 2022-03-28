@@ -360,9 +360,16 @@ p.sub-tagline {
 }
 
 .bee-line-break {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.301);
-  width: 100%;
-  margin-bottom: 20px;
+  height: 32px;
+  border-bottom: 1px solid #6d6d6d;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.bee-line-icon {
+  margin-top: 14.5px;
 }
 
 .home-content-wrapper {
@@ -370,7 +377,10 @@ p.sub-tagline {
 }
 
 .results-wrapper {
-  margin-top: 5.5vh;
+  margin-top: 40px;
+  padding-top: 8px;
+  height: calc(100vh - 40px);
+  background-color: white;
 }
 
 .results-header {
@@ -379,8 +389,69 @@ p.sub-tagline {
   margin-left: 16px;
   margin-right: 16px;
   color: #3d3d3d;
+  align-items: center;
 }
 
 .results {
   margin-top: 23px;
+}
+
+.back-button {
+  font-size: 23px;
+  margin-top: -1px;
+}
+
+.filter {
+  margin-top: -7px;
+  font-size: 16px;
+}
+
+.result-number {
+  font-weight: bold;
+  font-family: roboto serif;
+}
+
+.back-link {
+  color: #3d3d3d;
+}
+
+.result-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  background-color: #e9bb48;
+  border-radius: 99px;
+  margin-right: 16px;
+}
+
+.beekeeper-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #438CD0;
+}
+
+.distance {
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+
+.description {
+  font-size: 11px;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.result {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-items: flex-start;
 }

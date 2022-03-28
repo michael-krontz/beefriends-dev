@@ -12,7 +12,7 @@ import Results from "./Results";
 
 function App() {
   return (
-    <div style={{ height: '150vh', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
+    <div style={{ height: 'calc(100vh)', backgroundImage: 'linear-gradient(#ffd15a, #ffa26d)' }}>
       <div id="page-wrap">
       <Router>
       <>
