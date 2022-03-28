@@ -160,8 +160,9 @@ h3.apiarist-header {
 h3.tagline {
   font-size: 1.7rem;
   color: #4e4e4e;
-  font-family: Roboto;
+  font-family: roboto;
   margin-bottom: 16px;
+  font-weight: bold;
 }
 
 /* .bee-icon {
@@ -409,6 +410,7 @@ p.sub-tagline {
 .result-number {
   font-weight: bold;
   font-family: roboto serif;
+  font-size: 18px;
 }
 
 .back-link {
@@ -432,7 +434,7 @@ p.sub-tagline {
 }
 
 .beekeeper-name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 2px;
   color: #438CD0;
@@ -441,6 +443,7 @@ p.sub-tagline {
 .distance {
   font-size: 11px;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 .description {
