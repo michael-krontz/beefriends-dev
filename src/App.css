@@ -459,3 +459,101 @@ p.sub-tagline {
   flex-direction: column;
   align-items: flex-start;
 }
+
+.profile-wrapper {
+  margin-top: 4vh;
+  padding: 16px;
+  padding-top: 16px;
+  width: 100%;
+  background-color: white;
+}
+
+.profile-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -4px;
+}
+
+.honeycomb-pattern {
+}
+
+.profile-content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.header-avatar {
+  margin-top: -10px;
+}
+
+.offering-icon {
+  width: 16px;
+  height: 16px;
+  background-color: #373a47;
+  border-radius: 99px;
+}
+
+.offerings-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.offering-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 28%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.offering-icon {
+  margin-right: 4px;
+}
+
+.offering-title {
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.url-phone-social-block {
+  margin-top: 36px;
+}
+
+.social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3D3D3D;
+  color: white;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.gallery-img {
+  width: 110px;
+  height: 110px;
+  background-color: #373a47;
+  margin: 8px;
+}

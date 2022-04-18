@@ -14,10 +14,10 @@ export default function Home() {
                     <h3 className='tagline'>Find Local Beekeepers</h3>
                 </div>
                 <div className='tag-wrapper'>
-                    <h3 className='tagline'>Sample Local Honey</h3>
+                    <h3 className='tagline'>Try Local Honey</h3>
                 </div>
                 <div className='tag-wrapper'>
-                    <h3 className='tagline'>Help Save The Bees</h3>
+                    <h3 className='tagline'>Help Save Bees</h3>
                 </div>
             </div>
       </div>

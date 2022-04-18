@@ -9,6 +9,7 @@ import Home from "./Home";
 import ApiaristHome from "./ApiaristHome";
 import Signup from "./Signup";
 import Results from "./Results";
+import Profile from "./Profile";
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
             </header>
           </RecoilRoot>
           <Switch>
-          <Route exact path='/' component={Home}/>
+          <Route exact path='/' component={Home}/>         
           <Route path='/results' component={Results}/>
+          <Route path='/profile' component={Profile}/>
           <Route path='/signup' component={Signup}/>
           <Route path='/apiaristhome' component={ApiaristHome}/>
           <Route path='/authcontent' component={AuthContent}/>

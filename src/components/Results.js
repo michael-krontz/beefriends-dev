@@ -21,11 +21,13 @@ export default function Results() {
             <div className='results'>
                 <div className='result-wrapper'>
                     <div className='avatar'></div>
-                    <div className='result'>
-                        <h2 className='beekeeper-name'>Bob's Bee's</h2>
-                        <p className='distance'>9 mi.</p>
-                        <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                    </div>
+                        <div className='result'>
+                            <Link to={'/profile'}>
+                                <h2 className='beekeeper-name'>Bob's Bee's</h2>
+                            </Link>
+                            <p className='distance'>9 mi.</p>
+                            <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                        </div>
                 </div>
                 <div className='result-wrapper'>
                     <div className='avatar'></div>
