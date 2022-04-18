@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 99;
 }
 
 .nav-logo {
@@ -470,12 +471,24 @@ p.sub-tagline {
 
 .profile-header {
   width: 100%;
+  position: relative;
   display: flex;
+  z-index: 9;
   align-items: flex-start;
   margin-top: -4px;
 }
 
 .honeycomb-pattern {
+  position: absolute;
+  z-index: 0;
+  background-image: url(images/honeycomb-pattern@2x.png);
+  background-size: 147%;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 204px;
+  background-repeat: no-repeat;
+  width: 100vw;
 }
 
 .profile-content-block {
@@ -487,6 +500,8 @@ p.sub-tagline {
 
 .header-avatar {
   margin-top: -10px;
+  position: relative;
+  z-index: 80;
 }
 
 .offering-icon {

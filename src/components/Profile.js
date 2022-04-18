@@ -20,9 +20,9 @@ export default function Profile() {
                     <div className='header-avatar'>
                         <img src={headerAvatar} alt="avatar" className='header-avatar' width="147" height="auto"></img>
                     </div>
-                    {/* <div className='honeycomb-pattern'>
-                      <img src={honeycombPattern} alt="honeycomb" width="596" height="auto"></img>
-                    </div> */}
+                    <div className='honeycomb-pattern'>
+                      {/* <img src={honeycombPattern} alt="honeycomb" width="596" height="auto"></img> */}
+                    </div>
                 </div>
 
                 <div className='profile-content-block'>
