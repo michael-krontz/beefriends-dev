@@ -482,11 +482,11 @@ p.sub-tagline {
   position: absolute;
   z-index: 0;
   background-image: url(images/honeycomb-pattern@2x.png);
-  background-size: 147%;
+  background-size: 135%;
   background-position: center;
   top: 0;
   left: 0;
-  height: 204px;
+  height: 186px;
   background-repeat: no-repeat;
   width: 100vw;
 }
@@ -507,8 +507,9 @@ p.sub-tagline {
 .offering-icon {
   width: 16px;
   height: 16px;
-  background-color: #373a47;
+  background-color: #515151;
   border-radius: 99px;
+  margin-right: 4px;
 }
 
 .offerings-block {
@@ -528,13 +529,10 @@ p.sub-tagline {
   margin-bottom: 8px;
 }
 
-.offering-icon {
-  margin-right: 4px;
-}
-
 .offering-title {
   margin-left: 4px;
   font-size: 16px;
+  color: #515151;
 }
 
 .url-phone-social-block {
@@ -555,8 +553,16 @@ p.sub-tagline {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3D3D3D;
+  background-color: #515151;
   color: white;
+}
+
+.url {
+  color: #515151;
+}
+
+.phone {
+  color: #515151;
 }
 
 .image-gallery {
@@ -569,6 +575,25 @@ p.sub-tagline {
 .gallery-img {
   width: 110px;
   height: 110px;
-  background-color: #373a47;
+  background-color: #515151;
   margin: 8px;
+}
+
+h2.profile-name {
+  color: #515151;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+p.distance {
+  color: #515151;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+p.description {
+  color: #515151;
+  font-size: 15px;
+  /* font-weight: normal; */
+  margin-top: 8px;
 }

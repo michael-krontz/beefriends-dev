@@ -17,7 +17,7 @@ export default function Home() {
                     <h3 className='tagline'>Try Local Honey</h3>
                 </div>
                 <div className='tag-wrapper'>
-                    <h3 className='tagline'>Help Save Bees</h3>
+                    <h3 className='tagline'>Help Save the Bees</h3>
                 </div>
             </div>
       </div>

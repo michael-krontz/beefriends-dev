@@ -26,10 +26,10 @@ export default function Profile() {
                 </div>
 
                 <div className='profile-content-block'>
-                  <h2>Profile Name</h2>
-                  <p>12mi.</p>
+                  <h2 className='profile-name'>Profile Name</h2>
+                  <p className='distance'>12mi.</p>
 
-                  <p>Lorem ipsum sit ametorem ipsum sit sdsdfsg ipsum sit dffgfh ipsum sit amet.</p>
+                  <p className='description'>We are a family owned and operated farm in central Indiana, we specialize in honey production and we also retail high-quality beekeeping equipment.</p>
                 </div>
 
                 <div className='bee-line-break'>
