@@ -22,27 +22,27 @@ export default function Results() {
                 <div className='result-wrapper'>
                     <div className='avatar'></div>
                         <div className='result'>
+                            <p className='distance'>9 mi.</p>
                             <Link to={'/profile'}>
                                 <h2 className='beekeeper-name'>Bob's Bee's</h2>
                             </Link>
-                            <p className='distance'>9 mi.</p>
-                            <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                            <p className='intro'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus mauris urna</p>
                         </div>
                 </div>
                 <div className='result-wrapper'>
                     <div className='avatar'></div>
                     <div className='result'>
-                        <h2 className='beekeeper-name'>Fred's Bee's</h2>
                         <p className='distance'>18 mi.</p>
-                        <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                        <h2 className='beekeeper-name'>Fred's Bee's</h2>
+                        <p className='intro'>Lorem ipsum dolor sit amet, cous mauris urna</p>
                     </div>
                 </div>
                 <div className='result-wrapper'>
                     <div className='avatar'></div>
                     <div className='result'>
-                        <h2 className='beekeeper-name'>Joe's Bee's</h2>
                         <p className='distance'>27 mi.</p>
-                        <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                        <h2 className='beekeeper-name'>Joe's Bee's</h2>
+                        <p className='intro'>Lorem ipsum dolor sit amet. Nullam maximus mauris urnaonsectetur adipiscing elit. </p>
                     </div>
                 </div>
             </div>
