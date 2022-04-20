@@ -49,6 +49,17 @@ export default function Results() {
             <div className='bee-line-break'>
                 <img src={beeLineIcon} alt="bee-line" height="32" width="auto" className='bee-line-icon'></img>
             </div>
+
+            <div className='basic-results'>
+                <div className='basic-result-wrapper'>
+                    <div className='basic-distance'>16 mi.</div>
+                    <div className='basic-result'>Cheapo Farms Honey & Hives</div>
+                </div>
+                <div className='basic-result-wrapper'>
+                    <div className='basic-distance'>23 mi.</div>
+                    <div className='basic-result'>Bob's Okay Honey</div>
+                </div>
+            </div>
         </div>
       </>
   )

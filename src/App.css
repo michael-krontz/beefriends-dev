@@ -602,3 +602,25 @@ p.intro {
   font-size: 13px;
   text-align: left;
 }
+
+.basic-results {
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.basic-result-wrapper {
+  text-align: left;
+}
+
+.basic-distance {
+  color: #515151;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: -3px;
+}
+
+.basic-result {
+  color: #438CCD;
+  margin-bottom: 16px;
+}
