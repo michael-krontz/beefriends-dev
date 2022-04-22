@@ -1,9 +1,6 @@
 import React from 'react'
 import beeIcon from '../images/bee-icon.png'
 import LocateButton from './LocateButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
-const locationDot = <FontAwesomeIcon icon={faLocationDot} />
 
 export default function Home() {
   return (
