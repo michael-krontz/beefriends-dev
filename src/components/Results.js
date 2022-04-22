@@ -57,9 +57,10 @@ export default function Results() {
                 </div>
                 <div className='basic-result-wrapper'>
                     <div className='basic-distance'>23 mi.</div>
-                    <div className='basic-result'>Bob's Okay Honey</div>
+                    <div className='basic-result'>Frank's Okay Honey</div>
                 </div>
             </div>
+            <div className='copyright'>Copyright© 2022, BeeFriends LLC</div>
         </div>
       </>
   )
