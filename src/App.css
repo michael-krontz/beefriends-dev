@@ -172,9 +172,8 @@ h3.tagline {
 
 .taglines {
   display: flex;
-  justify-content: space-between;
   justify-content: space-around;
-  margin-top: 35vh;
+  margin-bottom: 23px;
 }
 
 .location-icon {
@@ -203,10 +202,11 @@ p.sub-tagline {
   border: none !important;
   height: 96px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed !important;
-  bottom: 64px;
+  bottom: 10vh;
 }
 
 .locate-button.icon {

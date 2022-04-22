@@ -12,16 +12,16 @@ export default function Home() {
             <div className='logo'>
                 <img src={beeIcon} alt="Logo" className='bee-icon' width="225" height="auto"></img>
             </div>
-            <div className='taglines'>
-                {/* <div className='location-icon'>{locationDot}</div> */}
-                <div className='tag-wrapper'>
-                    <h3 className='tagline'>Find <strong>very</strong> local honey.</h3>
-                </div>
-            </div>
       </div>
 
       <div className='locate-card'>
-         <LocateButton></LocateButton>
+        <div className='taglines'>
+            {/* <div className='location-icon'>{locationDot}</div> */}
+            <div className='tag-wrapper'>
+                <h3 className='tagline'>Find <strong>very</strong> local honey.</h3>
+            </div>
+        </div>
+        <LocateButton></LocateButton>
       </div>
     </div>
   )
