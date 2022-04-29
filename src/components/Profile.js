@@ -7,10 +7,45 @@ import headerAvatar from '../images/header-avatar@2x.png'
 import honeycombPattern from '../images/honeycomb-pattern@2x.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import useAxios, { configure } from 'axios-hooks'
+import Axios from 'axios'
+import LRU from 'lru-cache'
+var _ = require('lodash')
 const backButton = <FontAwesomeIcon icon={faArrowLeft} />
 
 export default function Profile() {
+
+  let name
+  let description
+  let urlAddress
+  let phone
+
+
+  const axios = Axios.create({
+    baseURL: 'https://beefriends-development-default-rtdb.firebaseio.com/',
+  })
+
+  const cache = new LRU({ max: 10 })
+  configure({ axios, cache })
   
+
+    const [{ data: getData, loading: getLoading, error: getError }] = useAxios('beekeepers.json')
+    if (getLoading) return <p>Loading...</p>
+    if (getError) return <p>Error!</p>
+    if (getData) {
+      fetchData()
+    }
+
+    function fetchData() {
+      var farmerData = getData  
+      farmerData = farmerData[0]
+      name =  _.startCase(_.toLower(farmerData.name));
+      description = farmerData.description
+      urlAddress = farmerData.url
+      phone = farmerData.phone
+      console.log("fetching")
+      console.log(farmerData)
+    }
 
   return (
       <>
@@ -30,10 +65,10 @@ export default function Profile() {
                 </div>
 
                 <div className='profile-content-block'>
-                  <h2 className='profile-name'>Profile Name</h2>
+                  <h2 className='profile-name'>{name}</h2>
                   <p className='distance'>12mi.</p>
 
-                  <p className='description'>We are a family owned and operated farm in central Indiana, we specialize in honey production and we also retail high-quality beekeeping equipment.</p>
+                  <p className='description'>{description}</p>
                 </div>
 
                 <div className='bee-line-break'>
@@ -86,8 +121,8 @@ export default function Profile() {
                 </div>
 
                 <div className='url-phone-social-block'>
-                  <div className='url'>beejuiceapiaries.com</div>
-                  <div className='phone'>555-123-4567</div>
+                  <div className='url'>{urlAddress}</div>
+                  <div className='phone'>{phone}</div>
                   <div className='social-wrapper'>
                     <div className='fb social-icon'>fb</div>
                     <div className='ig social-icon'>ig</div>
