@@ -20,7 +20,6 @@ export default function Profile() {
   let urlAddress
   let phone
 
-
   const axios = Axios.create({
     baseURL: 'https://beefriends-development-default-rtdb.firebaseio.com/',
   })

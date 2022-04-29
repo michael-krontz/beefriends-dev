@@ -2,7 +2,7 @@ import React from "react"
 import '../App.css'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from "./NavBar";
-import { RecoilRoot } from 'recoil';
+import { RecoilRoot, atom } from 'recoil';
 import AuthContent from "./AuthContent";
 import SideBar from "./SideBar";
 import Home from "./Home";
@@ -22,15 +22,15 @@ function App() {
               <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
               <NavBar></NavBar>
             </header>
+            <Switch>
+            <Route exact path='/' component={Home}/>         
+            <Route path='/results' component={Results}/>
+            <Route path='/profile' component={Profile}/>
+            <Route path='/signup' component={Signup}/>
+            <Route path='/apiaristhome' component={ApiaristHome}/>
+            <Route path='/authcontent' component={AuthContent}/>
+            </Switch>
           </RecoilRoot>
-          <Switch>
-          <Route exact path='/' component={Home}/>         
-          <Route path='/results' component={Results}/>
-          <Route path='/profile' component={Profile}/>
-          <Route path='/signup' component={Signup}/>
-          <Route path='/apiaristhome' component={ApiaristHome}/>
-          <Route path='/authcontent' component={AuthContent}/>
-          </Switch>
       </>
       </Router>
       </div>
