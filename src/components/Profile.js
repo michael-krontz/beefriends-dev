@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 import beeLineIcon from '../images/bee-line-icon@2x.png'
 import headerAvatar from '../images/header-avatar@2x.png'
 import honeycombPattern from '../images/honeycomb-pattern@2x.png'
@@ -8,6 +10,8 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 const backButton = <FontAwesomeIcon icon={faArrowLeft} />
 
 export default function Profile() {
+  
+
   return (
       <>
         <div className='profile-wrapper'>        
@@ -60,6 +64,25 @@ export default function Profile() {
 
                 <div className='bee-line-break'>
                   <img src={beeLineIcon} alt="bee-line" height="32" width="auto" className='bee-line-icon'></img>
+                </div>
+
+                <div className='products-wrapper'>
+                  <div className='products'>
+
+                  <Form>
+                    <Form.Group className="mb-3">
+                      <Form.Select aria-label="">
+                      <option>Available Products</option>
+                      <option value="1">15oz - $12.99</option>
+                      <option value="2">10oz - $7.99</option>
+                      <option value="3">5oz - $2.99</option>
+                    </Form.Select>
+                    </Form.Group>
+                    <Button variant="primary" type="submit" className='interested-button'>
+                      Add to Order
+                    </Button>
+                  </Form>
+                  </div>
                 </div>
 
                 <div className='url-phone-social-block'>

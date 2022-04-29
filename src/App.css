@@ -676,3 +676,21 @@ p.intro {
   font-weight: normal;
   margin-right: 8px;
 }
+
+.products-wrapper {
+  height: 120px;
+  padding-top: 40px;
+  margin: auto;
+}
+
+.products {
+  width: 92vw;
+  margin: auto;
+}
+
+.interested-button {
+  margin: auto;
+  background-color: #438CD0 !important;
+  border: none !important;
+  width: 100%;
+}
