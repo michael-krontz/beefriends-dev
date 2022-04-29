@@ -15,7 +15,7 @@ export default function Home() {
         <div className='taglines'>
             {/* <div className='location-icon'>{locationDot}</div> */}
             <div className='tag-wrapper'>
-                <h3 className='tagline'>Find <strong>very</strong> local honey.</h3>
+                <h3 className='tagline'><strong>Very</strong> local honey.</h3>
             </div>
         </div>
         <LocateButton></LocateButton>

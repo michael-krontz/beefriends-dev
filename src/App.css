@@ -162,7 +162,7 @@ h3.apiarist-header {
 }
 
 h3.tagline {
-  font-size: 1.75em;
+  font-size: 2em;
   color: #4e4e4e;
   font-family: roboto;
   margin-bottom: 16px;
@@ -637,15 +637,42 @@ p.intro {
 }
 
 .basic-result {
-  color: #438CCD;
-  margin-bottom: 16px;
+  color: #515151;
 }
 
 .copyright {
   position: absolute;
   bottom: 0;
   font-size: 11px;
-  width: 90vw;
+  width: 93vw;
   color: #989898;
   margin-bottom: 16px;
+}
+
+.basic-result-content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.basic-phone {
+  color: #515151;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 8px;
+}
+
+.basic-website {
+  color: #515151;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 8px;
+}
+
+.basic-facebook {
+  color: #515151;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 8px;
 }

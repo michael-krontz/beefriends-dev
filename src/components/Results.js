@@ -8,6 +8,7 @@ const backButton = <FontAwesomeIcon icon={faArrowLeft} />
 const filterButton = <FontAwesomeIcon icon={faFilter} />
 
 export default function Results() {
+  
   return (
       <>
         <div className='results-wrapper'>
@@ -50,16 +51,17 @@ export default function Results() {
                 <img src={beeLineIcon} alt="bee-line" height="32" width="auto" className='bee-line-icon'></img>
             </div>
 
-            <div className='basic-results'>
+            {/* <div className='basic-results'>
                 <div className='basic-result-wrapper'>
                     <div className='basic-distance'>16 mi.</div>
                     <div className='basic-result'>Cheapo Farms Honey & Hives</div>
+                    <div className='basic-result-content-wrapper'>
+                        <div className='basic-website'>website</div>
+                        <div className='basic-facebook'>fb</div>
+                        <div className='basic-phone'>555-555-5555</div>
+                    </div>
                 </div>
-                <div className='basic-result-wrapper'>
-                    <div className='basic-distance'>23 mi.</div>
-                    <div className='basic-result'>Frank's Okay Honey</div>
-                </div>
-            </div>
+            </div> */}
             <div className='copyright'>Copyright© 2022, BeeFriends LLC</div>
         </div>
       </>
