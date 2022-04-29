@@ -21,7 +21,7 @@
 
 .logo-wrapper {
   width: 100%;
-  margin-top: 7vh;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,12 +31,6 @@
 /* .bee-logo-small {
 
 } */
-
-.taglines {
-  display: flex;
-  flex-direction: column;
-  margin-top: 18px;
-}
 
 .update-profile-wrapper {
   display: flex;
@@ -148,23 +142,44 @@ h3.apiarist-header {
   max-width: 264px;
   max-height: 264px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 180px;
 }
 
+.logo-text {
+  font-size: 52px;
+  color: #474747;
+  font-weight: 700;
+  margin-bottom: 4vh;
+}
+
 .tag-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 h3.tagline {
-  font-size: 1.7rem;
+  font-size: 2em;
   color: #4e4e4e;
   font-family: roboto;
   margin-bottom: 16px;
-  letter-spacing: -1px;
-  font-weight: bold;
+  font-weight: 200;
+  line-height: .6em;
+}
+
+.taglines {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 23px;
+}
+
+.location-icon {
+  font-size: 1.75rem;
+  color: #4e4e4e;
+  margin-top: -13px;
 }
 
 /* .bee-icon {
@@ -187,10 +202,11 @@ p.sub-tagline {
   border: none !important;
   height: 96px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed !important;
-  bottom: 64px;
+  bottom: 10vh;
 }
 
 .locate-button.icon {
@@ -396,7 +412,7 @@ p.sub-tagline {
 }
 
 .results {
-  margin-top: 23px;
+  margin-top: 16px;
 }
 
 .back-button {
@@ -601,4 +617,62 @@ p.intro {
   color: #515151;
   font-size: 13px;
   text-align: left;
+}
+
+.basic-results {
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.basic-result-wrapper {
+  text-align: left;
+}
+
+.basic-distance {
+  color: #515151;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: -3px;
+}
+
+.basic-result {
+  color: #515151;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  width: 93vw;
+  color: #989898;
+  margin-bottom: 16px;
+}
+
+.basic-result-content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.basic-phone {
+  color: #515151;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 8px;
+}
+
+.basic-website {
+  color: #515151;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 8px;
+}
+
+.basic-facebook {
+  color: #515151;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 8px;
 }
