@@ -10,16 +10,20 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import useAxios, { configure } from 'axios-hooks'
 import Axios from 'axios'
 import LRU from 'lru-cache'
+import { currentFarmer } from "./atoms"
+import { useRecoilValue } from 'recoil'
 var _ = require('lodash')
 const backButton = <FontAwesomeIcon icon={faArrowLeft} />
 
 export default function Profile() {
 
+  const currentFarmerValue = useRecoilValue(currentFarmer)
+  console.log(currentFarmerValue)
+
   let name
   let description
   let urlAddress
   let phone
-
 
   const axios = Axios.create({
     baseURL: 'https://beefriends-development-default-rtdb.firebaseio.com/',
@@ -29,7 +33,7 @@ export default function Profile() {
   configure({ axios, cache })
   
 
-    const [{ data: getData, loading: getLoading, error: getError }] = useAxios('beekeepers.json')
+    const [{ data: getData, loading: getLoading, error: getError }] = useAxios('beekeepers/' + currentFarmerValue + '.json')
     if (getLoading) return <p>Loading...</p>
     if (getError) return <p>Error!</p>
     if (getData) {
@@ -38,7 +42,7 @@ export default function Profile() {
 
     function fetchData() {
       var farmerData = getData  
-      farmerData = farmerData[0]
+      // farmerData = farmerData[0]
       name =  _.startCase(_.toLower(farmerData.name));
       description = farmerData.description
       urlAddress = farmerData.url
