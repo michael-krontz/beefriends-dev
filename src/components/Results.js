@@ -5,19 +5,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faFilter } from '@fortawesome/free-solid-svg-icons'
 import { currentFarmer } from "./atoms"
-import { useRecoilValue, useSetRecoilState } from 'recoil'
+import { useSetRecoilState } from 'recoil'
 const backButton = <FontAwesomeIcon icon={faArrowLeft} />
 const filterButton = <FontAwesomeIcon icon={faFilter} />
 
 export default function Results() { 
 
     let farmer1 = 0
-    let farmer2 = 1 
-    let farmer3 = 2 
+    let farmer2 = 1
+    let farmer3 = 2
 
-    const currentFarmerValue = useRecoilValue(currentFarmer)
+    // const currentFarmerValue = useRecoilValue(currentFarmer)
     const setCurrentFarmer = useSetRecoilState(currentFarmer)
-    console.log(currentFarmerValue)
+    // console.log(currentFarmerValue)
 
     function ChangeFarmer(prop) {
         let farmerProp = prop

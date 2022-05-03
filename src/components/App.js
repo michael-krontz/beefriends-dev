@@ -2,7 +2,7 @@ import React from "react"
 import '../App.css'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from "./NavBar";
-import { RecoilRoot, atom } from 'recoil';
+import { RecoilRoot } from 'recoil';
 import AuthContent from "./AuthContent";
 import SideBar from "./SideBar";
 import Home from "./Home";
