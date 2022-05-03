@@ -11,13 +11,18 @@ const filterButton = <FontAwesomeIcon icon={faFilter} />
 
 export default function Results() { 
 
+    let farmer1 = 0
+    let farmer2 = 1 
+    let farmer3 = 2 
+
     const currentFarmerValue = useRecoilValue(currentFarmer)
     const setCurrentFarmer = useSetRecoilState(currentFarmer)
     console.log(currentFarmerValue)
 
-    function ChangeFarmer() {
-        setCurrentFarmer('test')
-        console.log(currentFarmerValue)
+    function ChangeFarmer(prop) {
+        let farmerProp = prop
+        setCurrentFarmer(farmerProp)
+        console.log(farmerProp)
     }
 
   return (
@@ -36,7 +41,7 @@ export default function Results() {
                             <div className='result'>
                                 <p className='distance'>9 mi.</p>
                                 <Link to={'/profile'}>
-                                    <h2 className='beekeeper-name' onClick={ChangeFarmer}>Bob's Bee's</h2>
+                                    <h2 className='beekeeper-name' onClick={() => ChangeFarmer(farmer1)}>{farmer1}</h2>
                                 </Link>
                                 <p className='intro'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus mauris urna</p>
                             </div>
@@ -45,7 +50,9 @@ export default function Results() {
                         <div className='avatar'></div>
                         <div className='result'>
                             <p className='distance'>18 mi.</p>
-                            <h2 className='beekeeper-name' onClick={ChangeFarmer}>Fred's Bee's</h2>
+                            <Link to={'/profile'}>
+                                <h2 className='beekeeper-name' onClick={() => ChangeFarmer(farmer2)}>{farmer2}</h2>
+                            </Link>
                             <p className='intro'>Lorem ipsum dolor sit amet, cous mauris urna</p>
                         </div>
                     </div>
@@ -53,7 +60,9 @@ export default function Results() {
                         <div className='avatar'></div>
                         <div className='result'>
                             <p className='distance'>27 mi.</p>
-                            <h2 className='beekeeper-name' onClick={ChangeFarmer}>Joe's Bee's</h2>
+                            <Link to={'/profile'}>
+                                <h2 className='beekeeper-name' onClick={() => ChangeFarmer(farmer3)}>{farmer3}</h2>
+                            </Link>
                             <p className='intro'>Lorem ipsum dolor sit amet. Nullam maximus mauris urnaonsectetur adipiscing elit. </p>
                         </div>
                     </div>
