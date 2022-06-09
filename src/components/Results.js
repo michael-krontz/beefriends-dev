@@ -45,13 +45,13 @@ export default function Results() {
           var farmerData = getData  
           farmer1Name =  _.startCase(_.toLower(farmerData[0].name));
           farmer1Desc = farmerData[0].description
-          farmer1Profile = farmerData[0].profileName
+          farmer1Profile = farmerData[0].id
           farmer2Name =   _.startCase(_.toLower(farmerData[1].name));
           farmer2Desc = farmerData[1].description
-          farmer2Profile = farmerData[1].profileName
+          farmer2Profile = farmerData[1].id
           farmer3Name =   _.startCase(_.toLower(farmerData[2].name));
           farmer3Desc = farmerData[2].description
-          farmer3Profile = farmerData[2].profileName
+          farmer3Profile = farmerData[2].id
           console.log("fetching")
         //   console.log(farmer1Name)
         }
