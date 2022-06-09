@@ -17,8 +17,8 @@ const backButton = <FontAwesomeIcon icon={faArrowLeft} />
 
 export default function Profile() {
 
-  const currentFarmerValue = useRecoilValue(currentFarmer)
-  console.log(currentFarmerValue)
+  const currentFarmerProfile = useRecoilValue(currentFarmer)
+  console.log("currentFarmer: " + currentFarmerProfile)
 
   let name
   let description
@@ -33,7 +33,7 @@ export default function Profile() {
   configure({ axios, cache })
   
 
-    const [{ data: getData, loading: getLoading, error: getError }] = useAxios('beekeepers/' + currentFarmerValue + '.json')
+    const [{ data: getData, loading: getLoading, error: getError }] = useAxios('beekeepers/' + currentFarmerProfile + '.json')
     if (getLoading) return <p>Loading...</p>
     if (getError) return <p>Error!</p>
     if (getData) {
